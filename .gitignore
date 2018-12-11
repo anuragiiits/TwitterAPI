@@ -1,0 +1,6 @@
+.DS_Store
+db.sqlite3
+*.pyc
+.env
+**/migrations/*
+__pycache__/
