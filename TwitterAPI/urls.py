@@ -21,5 +21,6 @@ from rest_framework_jwt.views import obtain_jwt_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('AuthUser.urls')),
+    path('user/', include('TwitterCore.urls')),
     path('get-jwt-token/', obtain_jwt_token),
 ]
