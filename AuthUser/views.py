@@ -16,6 +16,7 @@ class AddUser(APIView):
 
     def get(self, request, format=None):
         """Return the details of the current Logged In User"""
+        
         try:
             user = request.user
             serializer = self.serializer_class(user)
